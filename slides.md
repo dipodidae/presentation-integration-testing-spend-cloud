@@ -8,6 +8,14 @@ class: 'text-center'
 
 A wonderful journey to software stability
 
+<div class="flex justify-content-center content-center">
+<img src="/assets/images/qr.png" class="w-30" />
+</div>
+
+https://github.com/dipodidae/presentation-integration-testing-spend-cloud
+
+
+
 ---
 layout: image-right
 image: /assets/images/bob.jpg
@@ -24,7 +32,7 @@ image: /assets/images/bob.jpg
 * It's not clear who's responsible
 
 ---
-layout: image-right
+layout: image-left
 image: /assets/images/fishbowl.jpg
 ---
 
@@ -86,16 +94,43 @@ layout: center
 4. <span class="text-red-600">Red</span> <material-symbols-question-mark/> check [artifacts](https://gitlab.com/proactive-software/spend-cloud/-/pipelines/793706745/builds) and fix it
 5. <span class="text-green-600">Green</span> <material-symbols-question-mark/> deploy to production
 
+
 ---
 layout: image-right
 image: /assets/images/fine.jpg
 ---
 
 # Downsides
+
 * Unit tests green <material-symbols-question-mark/><openmoji-dog-face/> Everything is fine
 * It's not transparent
-* Testing is not sandboxed <mdi-arrow-right/> Tests can break other tests
-* We have this on our radar but we need you to be involved
+* Testing is not sandboxed <mdi-arrow-right class="text-red-200" /> <span class="text-red-400">Tests can break other tests</span>
+* We have this on our radar but <span class="text-blue-200">we need you to be involved</span>
+
+---
+
+# Before we start
+## Checklist
+
+* Cluster is running `sct cluster start`
+* local remote config has all the options enabled
+* Dev server is running `sct dev`
+* what are we going to test?
+
+
+
+
+##### remote-config.json
+
+```json
+{
+  "cash_and_card_report_archive_new": true,
+  "new_absence_feature": true,
+  "prototype_linking_items": true,
+  "new_module_pages": true,
+  "super_search": true
+}
+```
 
 ---
 
@@ -142,6 +177,8 @@ expect(page).toHaveURL()
 expect(page).toHaveScreenshot()
 ```
 
+
+
 ## More
 
 
@@ -163,6 +200,16 @@ layout: center
 ---
 
 # Demo
+
+## See if we
 ```sh
 yarn e2e:generate
 ```
+
+---
+layout: center
+---
+# Wrap up
+
+
+<material-symbols-question-mark class="text-blue-300 text-8xl" />
