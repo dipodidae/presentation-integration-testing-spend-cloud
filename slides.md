@@ -8,12 +8,22 @@ class: 'text-center'
 
 A wonderful journey to software stability
 
-<div class="flex justify-content-center content-center">
-<img src="/assets/images/qr.png" class="w-30" />
+<div class="flex justify-center content-center">
+<img src="/assets/images/qr.png" class="w-30 self-center" />
 </div>
 
 https://github.com/dipodidae/presentation-integration-testing-spend-cloud
 
+---
+layout: center
+---
+
+# By the end of this talk...
+
+
+- Know how we do integration tests
+- Know how to write integration tests
+- Have an idea of where we are heading in the <span class="text-teal-200 text-black">testosphere</span>
 
 
 ---
@@ -23,13 +33,14 @@ image: /assets/images/bob.jpg
 
 
 
-
 # Why this talk?
 
-* Integration tests affect everyone
-* We just changed our integration test software
-* The testing guild needs all your help
-* It's not clear who's responsible
+
+- Integration tests affect everyone
+- We just changed our integration test software
+- The testing guild needs all your help
+- It's not clear who's responsible
+
 
 ---
 layout: image-left
@@ -38,11 +49,13 @@ image: /assets/images/fishbowl.jpg
 
 # Integration tests?
 
-* <tabler-api/> An API endpoint might work but it could break the UI
-* <ph-heart-break-fill/> Everything can break anything
-* <material-symbols-ecg-heart/> You care about the stability of the product
-* <ic-baseline-support-agent/> Support Consultants can only handle so much
-* <ph-frame-corners/> Unit tests are not meaningful in the big picture
+
+- <tabler-api/> An API endpoint might work but it could break the UI
+- <ph-heart-break-fill/> Everything can break anything
+- <material-symbols-ecg-heart/> You care about the stability of the product
+- <ic-baseline-support-agent/> Support Consultants can only handle so much
+- <ph-frame-corners/> Unit tests are not meaningful in the big picture
+
 
 ---
 layout: center
@@ -64,7 +77,7 @@ layout: center
 ---
 
 # So...
-## Who's  responsible?
+## Who's responsible?
 
 <v-click class="w-50">
 
@@ -84,11 +97,12 @@ layout: center
 
 </v-click>
 
+
 ---
 
 # How do these pipelines work?
 
-1. Your unit tests* will run
+1. Your unit tests<mingcute-asterisk-fill class="text-gray-200"/> will run
 2. Once your unit tests are green <mdi-arrow-right/> Deploy on accept
 3. Playwright will run
 4. <span class="text-red-600">Red</span> <material-symbols-question-mark/> check [artifacts](https://gitlab.com/proactive-software/spend-cloud/-/pipelines/793706745/builds) and fix it
@@ -102,20 +116,24 @@ image: /assets/images/fine.jpg
 
 # Downsides
 
-* Unit tests green <material-symbols-question-mark/><openmoji-dog-face/> Everything is fine
-* It's not transparent
-* Testing is not sandboxed <mdi-arrow-right class="text-red-200" /> <span class="text-red-400">Tests can break other tests</span>
-* We have this on our radar but <span class="text-blue-200">we need you to be involved</span>
 
+- Unit tests green <material-symbols-question-mark/><openmoji-dog-face/> Everything is fine
+- It's not transparent
+- Testing is not sandboxed <mdi-arrow-right class="text-red-200" /> <span class="text-red-400">Tests can break other tests</span>
+- We have this on our radar but <span class="text-blue-200">we need you to be involved</span>
+
+
+
+<iframe src="https://giphy.com/embed/9M5jK4GXmD5o1irGrF" width="419" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 ---
 
 # Before we start
 ## Checklist
 
-* Cluster is running `sct cluster start`
-* local remote config has all the options enabled
-* Dev server is running `sct dev`
-* what are we going to test?
+- Cluster is running `sct cluster start`
+- local remote config has all the options enabled
+- Dev server is running `sct dev`
+- what are we going to test?
 
 
 
@@ -201,7 +219,10 @@ layout: center
 
 # Demo
 
-## See if we
+## Check if the link to the app store works
+
+
+
 ```sh
 yarn e2e:generate
 ```

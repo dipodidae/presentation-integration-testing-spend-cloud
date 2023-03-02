@@ -451,6 +451,13 @@
   dependencies:
     "@iconify/types" "*"
 
+"@iconify-json/mingcute@^1.1.5":
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/@iconify-json/mingcute/-/mingcute-1.1.5.tgz#d909b099e1caf67ad83fd5d5f10848f598572aa7"
+  integrity sha512-k2CaSPbi3YXvV2O0U+PLPJzjLF+5WqcqTGc1apEle06tj5GPqAwRjCpaZsHjWo8jYhnmi6YyjXJmS/VX+5Kx9g==
+  dependencies:
+    "@iconify/types" "*"
+
 "@iconify-json/openmoji@^1.1.22":
   version "1.1.22"
   resolved "https://registry.yarnpkg.com/@iconify-json/openmoji/-/openmoji-1.1.22.tgz#9f45748a31f922b043a85a00e03e4f048ebb83d0"

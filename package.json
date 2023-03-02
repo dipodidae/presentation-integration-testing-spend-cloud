@@ -15,6 +15,7 @@
     "@iconify-json/ic": "^1.1.13",
     "@iconify-json/material-symbols": "^1.1.32",
     "@iconify-json/mdi": "^1.1.48",
+    "@iconify-json/mingcute": "^1.1.5",
     "@iconify-json/openmoji": "^1.1.22",
     "@iconify-json/tabler": "^1.1.63"
   }
